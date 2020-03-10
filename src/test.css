@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+#html {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 65vh;
+}
+#demo1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 35vh;
+  border: 1px solid red;
+  overflow-y: auto;
+}
+#demo2 {
+  display: none;
+}
+#demo1::-webkit-scrollbar {
+  display: none;
+}
+#buttons {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+#buttons > button {
+  margin-bottom: 10px;
+  padding: 4px 8px;
+}
